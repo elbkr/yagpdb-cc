@@ -28,10 +28,10 @@
 
 ## Links
 
-- [Official YAGPDB repo]()
+- [Official YAGPDB repo](https://github.com/yagpdb-cc/yagpdb-cc)
 - [CHamburr's repo](https://github.com/chamburr/yagpdb-cc)
-- [BlackWolfWoof's repo]()
-- [Pedro pessoa's repo]()
+- [BlackWolfWoof's repo](https://github.com/BlackWolfWoof/yagpdb-cc)
+- [Pedro pessoa's repo](https://github.com/Pedro-Pessoa/yagpdb-cc)
 
 ## Other links
 
