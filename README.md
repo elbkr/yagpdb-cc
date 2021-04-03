@@ -25,8 +25,7 @@
 ## Links
 
 - [Official YAGPDB repo]()
-- [CHamburr's repo]()
+- [CHamburr's repo](https://github.com/chamburr/yagpdb-cc)
 - [BlackWolfWoof's repo]()
 - [Pedro pessoa's repo]()
 
-:copyright: copyright is for [CHamburr](https://github.com/chamburr)
