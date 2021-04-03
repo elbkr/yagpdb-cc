@@ -2,10 +2,10 @@
 
 <h1 align="center"><img src="https://yagpdb.xyz/static/img/logo_y.png" height=32px width=32px></img>&nbspYAGPDB Custom Commands</h1>
 
-<p align="center">
-  
 
-### This is a collection of the best custom commands for YAGDB feature
+### 
+<h1 align="center"><This is a collection of the best custom commands for YAGDB feature</h1>
+  
 
 ## Setup
 
