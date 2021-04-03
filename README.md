@@ -4,7 +4,8 @@
 
 
 ### <h1 align="center">This is a collection of the best custom commands for YAGDB</h1>
-  
+
+---
 
 ## Setup
 
