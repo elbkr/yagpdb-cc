@@ -31,3 +31,8 @@
 - [BlackWolfWoof's repo]()
 - [Pedro pessoa's repo]()
 
+## Other links
+
+[YAGPDB Community & Support](https://discord.gg/4uY54rw) Official support server  
+[YAGPDB Documentation](https://docs.yagpdb.xyz/reference/templates) Official documentation  
+[YAGPDB Learning page](https://learn.yagpdb.xyz/) Official learning page  
