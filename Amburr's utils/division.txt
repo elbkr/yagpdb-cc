@@ -1,0 +1,4 @@
+{{ $starter := toInt ( index .CmdArgs 0 ) }}
+{{ $divider := toInt ( index .CmdArgs 1 ) }}
+{{ $x:=$starter }}{{ $y:= toInt ( joinStr "" "-" $divider )}}{{ $z:=0 }}{{ $state:=0 }}
+{{ range $v := ( seq 0 (add $divider $starter) ) }}{{$z =$x}}{{$x = (add $x $y) }}{{if eq $x 0}}{{$state =1}}{{ joinStr "" $starter " divided by " $divider " equals " ( add $v 1 ) ". "}}{{end}}{{if and (lt $x 0) (eq $state 0) }}{{$state =1}}{{ joinStr "" $starter " divided by " $divider " equals " ( add $v 0) " with reminder of  " $z}}{{end}}{{ end }}

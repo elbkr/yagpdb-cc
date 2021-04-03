@@ -1,0 +1,63 @@
+{{ if .CmdArgs }}
+{{ $h := ( index .CmdArgs 0 ) }}
+{{ if ( lt ( len $h ) 7 ) }}
+{{ $z := 0 }}
+{{ $e:= 0 }}
+{{ $len := add ( toInt ( joinStr "" "-" ( len $h) ) ) 1 }}
+{{ range $k, $kk := seq $len 1 }}
+
+{{ if not $e}}
+{{ $v := index $h $k }}
+{{ $a := "" }}
+{{ if eq $v 48 }} {{ $a = 0 }}
+{{ else if eq $v 49 }} {{ $a = 1 }}
+{{ else if eq $v 50 }} {{ $a = 2 }}
+{{ else if eq $v 51}} {{ $a = 3 }}
+{{ else if eq $v 52 }} {{ $a = 4 }}
+{{ else if eq $v 53 }} {{ $a = 5 }}
+{{ else if eq $v 54 }} {{ $a = 6 }}
+{{ else if eq $v 55 }} {{ $a = 7 }}
+{{ else if eq $v 56 }} {{ $a = 8 }}
+{{ else if eq $v 57 }} {{ $a = 9 }}
+{{ else if or (eq $v 65) (eq $v 97 ) }} {{ $a = "10" }}
+{{ else if or (eq $v 66) (eq $v 98 ) }} {{ $a = "11" }}
+{{ else if or (eq $v 67) (eq $v 99 ) }} {{ $a = "12" }}
+{{ else if or (eq $v 68) (eq $v 100 ) }} {{ $a = "13" }}
+{{ else if or (eq $v 69) (eq $v 101 ) }} {{ $a = "14" }}
+{{ else if or (eq $v 70) (eq $v 102 ) }} {{ $a = "15" }}
+{{ else }}
+{{ $e = 1 }}
+Error: Argument needs to be colour in RGB hex.
+{{ end }}
+{{ if not ( eq $kk 0) }} {{ $kk = slice ( toString $kk ) 1 }} {{ end }}
+{{ $z = joinStr "" $z "+" $a "*16^" $kk }}
+{{ end }}
+{{ end }}
+
+{{ if not $e}}
+{{ $result := "" }}
+{{ $x := (slice ( exec "calc" $z ) 9 ) }}
+{{ range $k, $kk := seq 0 ( len $x )}}
+{{ if not $e }}
+{{ $v := index $x $k }}
+{{ $a := "" }}
+{{ if eq $v 48 }} {{ $a = 0 }}{{ else if eq $v 49 }} {{ $a = 1 }}
+{{ else if eq $v 50 }} {{ $a = 2 }} {{ else if eq $v 51}}{{ $a = 3 }}
+{{ else if eq $v 52 }} {{ $a = 4 }} {{ else if eq $v 53 }} {{ $a = 5 }}
+{{ else if eq $v 54 }} {{ $a = 6 }} {{ else if eq $v 55 }} {{ $a = 7 }} 
+{{ else if eq $v 56 }} {{ $a = 8 }} {{ else if eq $v 57 }} {{ $a = 9 }}
+{{ else }}
+{{ $e = 1 }}
+{{ end }}
+{{ $result = joinStr "" $result $a }}
+{{ end }}
+{{ end }}
+{{ $embed := cembed "title" "Colour Preview" "description" (joinStr "" "Colour hex: #" $h "\nColour decimal: " $result) "color" (toInt $result) }}
+{{ sendMessage nil $embed}}
+{{ end }}
+{{ else }}
+Error: Argument needs to be colour in RGB hex.
+{{ end }}
+{{ else }}
+Wrong use of command.
+{{ end }}

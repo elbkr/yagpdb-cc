@@ -1,0 +1,13 @@
+{{ $x := 0 }}
+{{ $y := 0 }}
+{{ $error := "Syntax *needs and is* **only one int argument**."}}
+{{ if  ( eq ( len .CmdArgs ) 1 )  }}
+{{ if and ( not ( userArg ( index .CmdArgs 0 ) ) ) ( $x = ( toInt ( index .CmdArgs 0 ) ) ) }}
+{{ range $v := ( seq 0 ( add $x 1 ) ) }}{{ $y = ( add $y  $v ) }}{{ end }}
+The **sum** of sequence of **{{ $x }}** is: __{{ $y }}__
+{{ else }}
+{{ $error }}
+{{ end }}
+{{ else }}
+{{ $error }}
+{{ end }}
