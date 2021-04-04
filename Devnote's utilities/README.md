@@ -57,6 +57,5 @@ The custom commands posted here are for free use, however if you do with to supp
 </details>
 
 ### Links!
-- 📑 [License](https://github.com/NaruDevnote/yagpdb-ccs/blob/master/LICENSE)
 - 🌄 [The Hideout](https://discord.gg/KK3HYhbzgG) (my test server)
 - 🛠 [Radeon Development](https://discord.gg/xcZwGhSy4G)
