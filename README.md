@@ -18,6 +18,8 @@
 - Save the command
 - Done!
 
+### Or you will find a readme.md file on some folders that will help you setup the commands
+
 ## Contributing
 
 ### Want to add another custom command to this repository?
