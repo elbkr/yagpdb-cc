@@ -4,12 +4,6 @@
 
 The custom commands posted here are for free use, however if you do with to support me you can rep me in the [YAGPDB Support Server](https://discord.com/invite/4udtcA5) or gift Nitro *if you're that generous*. My tag is **Devonte#0745** (ID 622146791659405313) 😉
 
-**I am currently taking requests for CCs to add to this repository!** See [Contributing](#Contributing) for more info.
-
-Sorry I haven't been maintaining this repo recently, I've been busy developing a bot with some friends, feel free to check it out below under [links](#links)! We're working really hard on it and appreciate any support! There will be CC updates for the repo coming shortly!!
-
-## Recent Updates:
-- Rework of some CCs
 
 ## Available Custom Commands:
 <details>
@@ -62,34 +56,7 @@ Sorry I haven't been maintaining this repo recently, I've been busy developing a
   </br>
 </details>
 
-## Planned Custom Commands:
-Plan | ETA (Release Date)
------|-----
-Counting CCs Update | Soon™
-Inspect CC | Soon™
-AutoPartner CC System | Soon™
-
-*This list is in order of priority, so you may see it changing often*
-
-## Contributing
-If you have a suggestion for a custom command or custom commands to be made or added to this repo, you can contact me through Discord, comment your suggestion in the new discussions area in this repo, or open an Issue with "suggestion" in the name and I will get back to you ASAP!
-
-## Other Info
-My testing server will now be open for people to join and ask questions/suggest ideas/etc, you can find the invite below.
-
-This repository is officially licensed under the GNU General Public License v3 which you can read in the link below, and all existing CCs will have the following mark in the note to represent this ⬇⬇⬇ Please do not remove this, give credit where credit is due. :)
-```
-© NaruDevnote 2020-2021 (GNU GPL v3)
-https://github.com/NaruDevnote/yagpdb-ccs
-```
-
 ### Links!
 - 📑 [License](https://github.com/NaruDevnote/yagpdb-ccs/blob/master/LICENSE)
 - 🌄 [The Hideout](https://discord.gg/KK3HYhbzgG) (my test server)
 - 🛠 [Radeon Development](https://discord.gg/xcZwGhSy4G)
-
-Other Cool Githubs:
-- DZ-TM: [Yagpdb.xyz](https://github.com/DZ-TM/Yagpdb.xyz)
-- Crenshaw/Sylvester: [Yagpdb-ccs](https://github.com/Crenshaw1312/Yagpdb-ccs)
-- Piterxyz: [yagpdb-cc](https://github.com/Piterxyz/yagpdb-cc)
-- L-Zeuch: [lagpdb-cc](https://github.com/l-zeuch/lagpdb-cc)
