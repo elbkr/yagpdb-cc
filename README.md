@@ -36,6 +36,7 @@
 - [Devnote-dev's repo](https://github.com/devnote-dev/yagpdb-ccs)
 - [DZ-TM's repo](https://github.com/DZ-TM/Yagpdb.xyz)
 - [Piterxyz's repo](https://github.com/Piterxyz/yagpdb-cc)
+- [I-zeuch's repo](https://github.com/l-zeuch/lagpdb-cc)
 
 ## Other links
 
