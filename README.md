@@ -33,9 +33,12 @@
 - [CHamburr's repo](https://github.com/chamburr/yagpdb-cc)
 - [BlackWolfWoof's repo](https://github.com/BlackWolfWoof/yagpdb-cc)
 - [Pedro pessoa's repo](https://github.com/Pedro-Pessoa/yagpdb-cc)
+- [Devnote-dev's repo](https://github.com/devnote-dev/yagpdb-ccs)
+- [DZ-TM's repo](https://github.com/DZ-TM/Yagpdb.xyz)
+- [Piterxyz's repo](https://github.com/Piterxyz/yagpdb-cc)
 
 ## Other links
 
-[YAGPDB Community & Support](https://discord.gg/4uY54rw) Official support server  
-[YAGPDB Documentation](https://docs.yagpdb.xyz/reference/templates) Official documentation  
-[YAGPDB Learning page](https://learn.yagpdb.xyz/) Official learning page  
+- [YAGPDB Community & Support](https://discord.gg/4uY54rw) 
+- [YAGPDB Documentation](https://docs.yagpdb.xyz/reference/templates)
+- [YAGPDB Learning page](https://learn.yagpdb.xyz/) 
