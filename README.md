@@ -29,7 +29,7 @@
 - Submit a pull request
 - I will review it and accept/decline it
 
-## Links
+## Commands owners
 
 - [Official YAGPDB repo](https://github.com/yagpdb-cc/yagpdb-cc)
 - [CHamburr's repo](https://github.com/chamburr/yagpdb-cc)
@@ -42,6 +42,7 @@
 
 ## Other links
 
+- [YAGPDB website](yagpdb.xyz)
 - [YAGPDB Community & Support](https://discord.gg/4uY54rw) 
-- [YAGPDB Documentation](https://docs.yagpdb.xyz/reference/templates)
+- [YAGPDB Documentation](https://docs.yagpdb.xyz/)
 - [YAGPDB Learning page](https://learn.yagpdb.xyz/) 
