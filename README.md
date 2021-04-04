@@ -9,12 +9,12 @@
 
 ## Setup
 
-- Select the command you want to copy.
+- Select the command/function you want to copy.
 - Go to https://yagpdb.xyz/manage and enter to the server you want it to have the custom command
 - Click on `core` and then `custom commands`
 - Click on `Create a New Custom Command`
 - Change the trigger type to one that fits with the custom command
-- Change the response to the custom command.txt content
+- Change the response to the custom command's files content
 - Save the command
 - Done!
 
