@@ -1,0 +1,20 @@
+{{/*
+    Trigger type: Regex
+    Trigger: \A  
+    
+    Author: StinkySlinky#8071
+    Lincense: AGPL-3.0
+    Copyright (c): 2021
+*/}}
+
+{{if not (reFind `\A-(?:whos)?(?:that)?(?:pokemon)` .Message.Content)}}
+    {{if (dbGet .User.ID "whosthat").Value}}
+        {{$pokemon := (dbGet .User.ID "whosthat").Value}}
+        {{if eq (lower (.Message.Content)) (lower $pokemon)}}
+That's correct, {{.User.Mention}}!
+            {{dbDel .User.ID "whosthat"}}
+        {{else}}
+That's not the right pokémon, {{.User.Mention}}.
+        {{end}}
+    {{end}}
+{{end}}

@@ -1,0 +1,40 @@
+{{/*
+    This is the main command for the pokemon package.
+    It will allow users to initiate a guessing process.
+
+    Recommended trigger and trigger type: Regex trigger with trigger `\A-(?:whos)?(?:that)?(?:pokemon)`
+
+    Author: StinkySlinky#8071
+    Lincense: AGPL-3.0
+    Copyright (c): 2021
+*/}}
+
+{{/* CONFIG AREA START */}}
+
+    {{$MAX_TIME := 10}} {{/* The max time in seconds you want your member give to guess.*/}}
+
+{{/* CONFIG AREA END */}}
+
+{{$enemy := (toString (randInt 1 808))}}
+{{$dict := dict}}
+{{- range $key, $value := (dbGet 1 "Names").Value -}}
+    {{- $dict.Set $key $value -}}
+{{end}}
+{{if not .ExecData}}
+    {{if not (dbGet .User.ID "whosthat").Value}}
+    {{$embed := cembed "title" "Who's this pokémon!?" 
+        "description" (printf "This may only be answered by %s! You have %s." .User.Mention ((print $MAX_TIME "s")|toDuration|humanizeDurationSeconds))
+        "image" (sdict "url" (print "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" $enemy ".png"))
+    }}
+    {{$ID := sendMessageNoEscapeRetID nil (complexMessage "content" (print .User.Mention) "embed" $embed)}}
+    {{dbSetExpire .User.ID "whosthat" ($dict.Get (toInt64 $enemy)) (add $MAX_TIME 2)}}
+    {{execCC .CCID nil $MAX_TIME $ID}}
+    {{else}}
+        You're already trying to guess a pokémon!
+    {{end}}
+{{else}}
+    {{if (dbGet .User.ID "whosthat").Value}}
+        {{editMessage nil .ExecData (complexMessageEdit "content" (print "You're out of time, " .User.Mention ".\nThe pokémon was **" ($dict.Get (toInt64 $enemy)) "**.") "embed" nil)}}
+    {{end}}
+{{end}}
+{{deleteTrigger 1}}

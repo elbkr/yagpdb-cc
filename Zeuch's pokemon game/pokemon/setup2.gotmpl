@@ -1,0 +1,83 @@
+{{/*
+    Trigger type: none.
+
+    Author: StinkySlinky#8071
+    Lincense: AGPL-3.0
+    Copyright (c): 2021
+*/}}
+
+{{$dict1 := dict}}
+{{- range $key, $value := (dbGet 1 "Names").Value -}}
+    {{$silent := ($dict1.Set $key $value) -}}
+{{end}}
+ 
+{{$addDict := dict 495 "Snivy" 496 "Servine" 497 "Serperior" 498 "Tepig" 499 "Pignite" 500 "Emboar" 
+            501 "Oshawott" 502 "Dewott" 503 "Samurott" 504 "Patrat" 505 "Watchog" 
+            506 "Lillipup" 507 "Herdier" 508 "Stoutland" 509 "Purrloin" 510 "Liepard" 
+            511 "Pansage" 512 "Simisage" 513 "Pansear" 514 "Simisear" 515 "Panpour" 
+            516 "Simipour" 517 "Munna" 518 "Musharna" 519 "Pidove" 520 "Tranquill" 
+            521 "Unfezant" 522 "Blitzle" 523 "Zebstrika" 524 "Roggenrola" 525 "Boldore" 
+            526 "Gigalith" 527 "Woobat" 528 "Swoobat" 529 "Drilbur" 530 "Excadrill" 
+            531 "Audino" 532 "Timburr" 533 "Gurdurr" 534 "Conkeldurr" 535 "Tympole" 
+            536 "Palpitoad" 537 "Seismitoad" 538 "Throh" 539 "Sawk" 540 "Sewaddle" 
+            541 "Swadloon" 542 "Leavanny" 543 "Venipede" 544 "Whirlipede" 545 "Scolipede" 
+            546 "Cottonee" 547 "Whimsicott" 548 "Petilil" 549 "Lilligant" 550 "Basculin" 
+            551 "Sandile" 552 "Krokorok" 553 "Krookodile" 554 "Darumaka" 555 "Darmanitan" 
+            556 "Maractus" 557 "Dwebble" 558 "Crustle" 559 "Scraggy" 560 "Scrafty" 
+            561 "Sigilyph" 562 "Yamask" 563 "Cofagrigus" 564 "Tirtouga" 565 "Carracosta" 
+            566 "Archen" 567 "Archeops" 568 "Trubbish" 569 "Garbodor" 570 "Zorua" 
+            571 "Zoroark" 572 "Minccino" 573 "Cinccino" 574 "Gothita" 575 "Gothorita" 
+            576 "Gothitelle" 577 "Solosis" 578 "Duosion" 579 "Reuniclus" 580 "Ducklett" 
+            581 "Swanna" 582 "Vanillite" 583 "Vanillish" 584 "Vanilluxe" 585 "Deerling" 
+            586 "Sawsbuck" 587 "Emolga" 588 "Karrablast" 589 "Escavalier" 590 "Foongus" 
+            591 "Amoonguss" 592 "Frillish" 593 "Jellicent" 594 "Alomomola" 595 "Joltik" 
+            596 "Galvantula" 597 "Ferroseed" 598 "Ferrothorn" 599 "Klink" 600 "Klang" 
+            601 "Klinklang" 602 "Tynamo" 603 "Eelektrik" 604 "Eelektross" 605 "Elgyem" 
+            606 "Beheeyem" 607 "Litwick" 608 "Lampent" 609 "Chandelure" 610 "Axew" 
+            611 "Fraxure" 612 "Haxorus" 613 "Cubchoo" 614 "Beartic" 615 "Cryogonal" 
+            616 "Shelmet" 617 "Accelgor" 618 "Stunfisk" 619 "Mienfoo" 620 "Mienshao" 
+            621 "Druddigon" 622 "Golett" 623 "Golurk" 624 "Pawniard" 625 "Bisharp" 
+            626 "Bouffalant" 627 "Rufflet" 628 "Braviary" 629 "Vullaby" 630 "Mandibuzz" 
+            631 "Heatmor" 632 "Durant" 633 "Deino" 634 "Zweilous" 635 "Hydreigon" 
+            636 "Larvesta" 637 "Volcarona" 638 "Cobalion" 639 "Terrakion" 640 "Virizion" 
+            641 "Tornadus" 642 "Thundurus" 643 "Reshiram" 644 "Zekrom" 645 "Landorus" 
+            646 "Kyurem" 647 "Keldeo" 648 "Meloetta" 649 "Genesect" 650 "Chespin" 
+            651 "Quilladin" 652 "Chesnaught" 653 "Fennekin" 654 "Braixen" 655 "Delphox" 
+            656 "Froakie" 657 "Frogadier" 658 "Greninja" 659 "Bunnelby" 660 "Diggersby" 
+            661 "Fletchling" 662 "Fletchinder" 663 "Talonflame" 664 "Scatterbug" 665 "Spewpa" 
+            666 "Vivillon" 667 "Litleo" 668 "Pyroar" 669 "Flabébé" 670 "Floette" 
+            671 "Florges" 672 "Skiddo" 673 "Gogoat" 674 "Fufrou" 675 "Espurr" 
+            676 "Meowstic" 677 "Honedge" 688 "Doublade" 689 "Aegislash" 680 "Spritzee" 
+            681 "Aromatisse" 682 "Swirlix" 683 "Slurpuff" 684 "Inkay" 685 "Malamar" 
+            686 "Binacle" 687 "Barbaracle" 698 "Skrelp" 699 "Dragalge" 690 "Clauncher" 
+            691 "Clawitzer" 692 "Helioptile" 693 "Heliolisk" 694 "Tyrunt" 695 "Tyrantrum" 
+            696 "Amaura" 697 "Aurorus" 678 "Sylveon" 677 "Hawlucha" 700 "Dedenne" 
+            701 "Carbink" 702 "Goomy" 703 "Sliggoo" 704 "Goodra" 705 "Klefki" 
+            706 "Phantump" 707 "Trevenant" 708 "Pumpkaboo" 709 "Gourgeist" 710 "Bergmite" 
+            711 "Avalugg" 712 "Noibat" 713 "Noivern" 714 "Xerneas" 715 "Yveltal" 
+            716 "Zygarde" 717 "Diancie" 718 "Hoopa" 719 "Volcanion" 720 "Rowlet" 
+            721 "Dartrix" 722 "Decidueye" 723 "Litten" 724 "Torracat" 725 "Incineroar" 
+            726 "Popplio" 727 "Brionne" 728 "Primarina" 730 "Pikipek" 731 "Trumbeak" 
+            731 "Toucannon" 732 "Yungoos" 733 "Gumshoos" 734 "Grubbin" 735 "Charjabug" 
+            736 "Vikavolt" 737 "Crabrawler" 738 "Crabominable" 739 "Oricorio" 740 "Cutiefly" 
+            741 "Ribombee" 742 "Rockruff" 743 "Lycanroc" 744 "Wishiwashi" 745 "Mareanie" 
+            746 "Toxapex" 747 "Mudbray" 748 "Mudsdale" 749 "Dewpider" 750 "Araquanid" 
+            751 "Fomantis" 752 "Lurantis" 753 "Morelull" 754 "Shiinotic" 755 "Salandit" 
+            756 "Salazzle" 757 "Stufful" 758 "Bewear" 759 "Bounsweet" 760 "Steenee" 
+            761 "Tsareena" 762 "Comfey" 763 "Oranguru" 764 "Passimian" 765 "Wimpod" 
+            766 "Golisopod" 767 "Sandygast" 768 "Palossand" 769 "Pyukumuku" 770 "Type: Null" 
+            771 "Silvally" 772 "Minior" 773 "Komala" 774 "Turtonator" 775 "Togedemaru" 
+            776 "Mimikyu" 777 "Bruxish" 778 "Drampa" 779 "Dhelmise" 780 "Jangmo-o" 
+            781 "Hakamo-o" 782 "Kommo-o" 783 "Tapu Koko" 784 "Tapu Lele" 785 "Tapu Bulu" 
+            786 "Tapu Fini" 787 "Cosmog" 788 "Cosmoem" 789 "Solgaleo" 790 "Lunala" 
+            791 "Nihilego" 792 "Buzzwole" 793 "Pheromosa" 794 "Xurkitree" 795 "Celesteela" 
+            796 "Kartana" 797 "Guzzlord" 798 "Necrozma" 799 "Magearna" 800 "Marshadow" 
+            801 "Poipole" 802 "Naganadel" 803 "Stakataka" 804 "Blacephalon" 805 "Zeraora" 
+            806 "Meltan" 807 "Melmetal"}}
+ 
+{{range $k,$v := $addDict -}}
+    {{- $dict1.Set $k $v -}}
+{{- end}}
+{{dbSet 1 "Names" $dict1}}
+full setup done!
+{{deleteResponse}}
