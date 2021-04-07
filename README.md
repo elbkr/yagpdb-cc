@@ -39,7 +39,7 @@
 - [DZ-TM's repo](https://github.com/DZ-TM/Yagpdb.xyz)
 - [Piterxyz's repo](https://github.com/Piterxyz/yagpdb-cc)
 - [I-zeuch's repo](https://github.com/l-zeuch/lagpdb-cc)
-
+- [Kimo0rven's repo](https://github.com/kimo0rven/yagpdb-cc)
 ## Other links
 
 - [YAGPDB website](yagpdb.xyz)
