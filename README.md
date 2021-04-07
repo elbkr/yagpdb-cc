@@ -18,6 +18,8 @@
 - Save the command
 - Done!
 
+### Or you will find a readme.md file on some folders that will help you setup the commands
+
 ## Contributing
 
 ### Want to add another custom command to this repository?
@@ -27,7 +29,7 @@
 - Submit a pull request
 - I will review it and accept/decline it
 
-## Links
+## Commands owners
 
 - [Official YAGPDB repo](https://github.com/yagpdb-cc/yagpdb-cc)
 - [CHamburr's repo](https://github.com/chamburr/yagpdb-cc)
@@ -36,9 +38,11 @@
 - [Devnote-dev's repo](https://github.com/devnote-dev/yagpdb-ccs)
 - [DZ-TM's repo](https://github.com/DZ-TM/Yagpdb.xyz)
 - [Piterxyz's repo](https://github.com/Piterxyz/yagpdb-cc)
+- [I-zeuch's repo](https://github.com/l-zeuch/lagpdb-cc)
 
 ## Other links
 
+- [YAGPDB website](yagpdb.xyz)
 - [YAGPDB Community & Support](https://discord.gg/4uY54rw) 
-- [YAGPDB Documentation](https://docs.yagpdb.xyz/reference/templates)
+- [YAGPDB Documentation](https://docs.yagpdb.xyz/)
 - [YAGPDB Learning page](https://learn.yagpdb.xyz/) 
