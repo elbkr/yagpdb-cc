@@ -1,0 +1,16 @@
+{{/* SETUP:
+     - Set the trigger type to Regex and the trigger to: \A
+
+     CREDITS: SpecialEliteSNP <https://github.com/SpecialEliteSNP>
+*/}}
+
+{{/* VARIABLES - You can edit these values */}}
+  {{/* The message */}}
+    {{ $m := cembed "title" "Test message" "description" "Random text" "color" (randInt 16777217) }}
+
+
+{{/* CODE - Don't edit this part */}}
+{{ with (dbGet .Channel.ID "sticky-message").Value }}
+  {{ deleteMessage nil (toInt .) 0 }}
+{{ end }}
+{{ dbSet .Channel.ID "sticky-message" (str (sendMessageNoEscapeRetID nil $m)) }}
