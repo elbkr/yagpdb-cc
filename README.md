@@ -31,15 +31,16 @@
 
 ## Commands owners
 
-- [Official YAGPDB repo](https://github.com/yagpdb-cc/yagpdb-cc)
-- [CHamburr's repo](https://github.com/chamburr/yagpdb-cc)
-- [BlackWolfWoof's repo](https://github.com/BlackWolfWoof/yagpdb-cc)
-- [Pedro pessoa's repo](https://github.com/Pedro-Pessoa/yagpdb-cc)
-- [Devnote-dev's repo](https://github.com/devnote-dev/yagpdb-ccs)
-- [DZ-TM's repo](https://github.com/DZ-TM/Yagpdb.xyz)
-- [Piterxyz's repo](https://github.com/Piterxyz/yagpdb-cc)
-- [I-zeuch's repo](https://github.com/l-zeuch/lagpdb-cc)
-- [Kimo0rven's repo](https://github.com/kimo0rven/yagpdb-cc)
+- [Official YAGPDB](https://github.com/yagpdb-cc/yagpdb-cc)
+- [CHamburr](https://github.com/chamburr/yagpdb-cc)
+- [BlackWolfWoof](https://github.com/BlackWolfWoof/yagpdb-cc)
+- [Pedro pessoa](https://github.com/Pedro-Pessoa/yagpdb-cc)
+- [Devnote-dev](https://github.com/devnote-dev/yagpdb-ccs)
+- [DZ-TM](https://github.com/DZ-TM/Yagpdb.xyz)
+- [Piterxyz](https://github.com/Piterxyz/yagpdb-cc)
+- [I-zeuch](https://github.com/l-zeuch/lagpdb-cc)
+- [Kimo0rven](https://github.com/kimo0rven/yagpdb-cc)
+- [SpecialEliteSNP](https://github.com/SpecialEliteSNP/yagpdb-cc)
 ## Other links
 
 - [YAGPDB website](yagpdb.xyz)
