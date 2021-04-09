@@ -18,13 +18,13 @@
 - Save the command
 - Done!
 
-### Or you will find a readme.md file on some folders that will help you setup the commands
+### You will find a readme file on some folders that will help you setup the commands
 
 ## Contributing
 
 ### Want to add another custom command to this repository?
 
-- Create a fork of this rep
+- Create a fork of this repository
 - Make your changes
 - Submit a pull request
 - I will review it and accept/decline it
@@ -41,6 +41,7 @@
 - [I-zeuch](https://github.com/l-zeuch/lagpdb-cc)
 - [Kimo0rven](https://github.com/kimo0rven/yagpdb-cc)
 - [SpecialEliteSNP](https://github.com/SpecialEliteSNP/yagpdb-cc)
+- 
 ## Other links
 
 - [YAGPDB website](yagpdb.xyz)
